@@ -23,7 +23,6 @@
 
   <url>https://github.com/basler/pylon-ros-camera</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>actionlib_msgs</build_depend>
   <build_depend>message_generation</build_depend>
@@ -32,5 +31,9 @@
   <run_depend>actionlib_msgs</run_depend>
   <run_depend>message_runtime</run_depend>
   <run_depend>sensor_msgs</run_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
 
 </package>
