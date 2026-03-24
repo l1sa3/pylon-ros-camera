@@ -118,13 +118,13 @@ class GrabAndSaveImageActionServers(Node):
 
 
 def main():
-rclpy.init()
+    rclpy.init()
 
-node = GrabAndSaveImageActionServers()
-rclpy.spin(node)    # spin() simply keeps python from exiting until this node is stopped
+    node = GrabAndSaveImageActionServers()
+    rclpy.spin(node)    # spin() simply keeps python from exiting until this node is stopped
 
-node.destroy_node()
-rclpy.shutdown()
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == "__main__":
     main()

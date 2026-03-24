@@ -1,22 +1,22 @@
-#!/usr/bin/python3
-
+#!/usr/bin/env python3
+from setuptools import setup
 package_name = 'pylon_camera'
 
 setup(
     name=package_name,
     version='0.17.1',
-    packages=['talker_py'],
+    packages=['pylon_camera'],
     package_dir={'': 'src'},
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='Marcel Debout',
     maintainer_email='pablo.quilez@dragandbot.com',
     description='Proprietary Package for Basler Cameras using the the Pylon API. - Supports DART, USB3 and GigE cameras. - Setting Gain, Gamma, Exposure, Binning and Brightness using Services.',
-    license='BSD'
+    license='BSD',
+
     data_files=[
-        ('share/ament_index/resource_index/packages',
-            ['resource/pylon_camera']),
-        ('share/pylon_camera', ['package.xml']),
+    ('share/ament_index/resource_index/packages', ['resource/pylon_camera']),
+    ('share/pylon_camera', ['package.xml']),
     ],
     entry_points={
         'console_scripts': [
